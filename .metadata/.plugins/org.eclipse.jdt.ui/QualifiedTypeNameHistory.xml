@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.widget.LinearLayout"/>
+<fullyQualifiedTypeName name="android.widget.DatePicker"/>
+<fullyQualifiedTypeName name="com.example.linux2.R.layout"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.widget.Chronometer"/>
+<fullyQualifiedTypeName name="com.example.linux2.R.id"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="android.animation.Animator"/>
+<fullyQualifiedTypeName name="android.view.animation.AnimationUtils"/>
+<fullyQualifiedTypeName name="com.example.l3.R.animator"/>
+<fullyQualifiedTypeName name="android.view.animation.Animation"/>
+<fullyQualifiedTypeName name="android.widget.TableLayout"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemSelectedListener"/>
+<fullyQualifiedTypeName name="android.widget.Spinner"/>
+<fullyQualifiedTypeName name="com.example.l3.R.array"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="java.net.URI"/>
+<fullyQualifiedTypeName name="android.provider.ContactsContract"/>
+<fullyQualifiedTypeName name="android.database.Cursor"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="com.example.l3.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="com.example.l3.R.id"/>
+<fullyQualifiedTypeName name="com.example.l3.MainActivity"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.example.l4.R.id"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+</qualifiedTypeNameHistroy>

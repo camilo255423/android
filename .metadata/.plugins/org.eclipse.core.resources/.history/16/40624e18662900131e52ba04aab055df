@@ -1,0 +1,60 @@
+package com.example.l4;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+FileOutputStream fos;
+FileInputStream fis;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        TextView tv = (TextView) this.findViewById(R.id.tv);
+		/*fos =  new FileOutputStream("archivo.txt");
+		fos.write("hola".getBytes());
+		fos.flush();
+		fos.close();*/
+    	 
+    	 String datax = "" ;
+         try {
+             FileInputStream fIn = openFileInput ( "settings.dat" ) ;
+             InputStreamReader isr = new InputStreamReader ( fIn ) ;
+             BufferedReader buffreader = new BufferedReader ( isr ) ;
+
+             String readString = buffreader.readLine ( ) ;
+             while ( readString != null ) {
+                 datax = datax + readString ;
+                 readString = buffreader.readLine ( ) ;
+             }
+             
+             isr.close ( ) ;
+             
+         } catch ( IOException ioe ) {
+             ioe.printStackTrace ( ) ;
+         }
+         tv.setText("datos"+datax);
+     
+	
+     
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}

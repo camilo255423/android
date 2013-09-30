@@ -1,0 +1,76 @@
+package com.example.l4;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import android.os.Bundle;
+import android.os.Environment;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+FileOutputStream fos;
+FileInputStream fis;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        TextView tv = (TextView) this.findViewById(R.id.tv);
+		String s=Environment.getExternalStorageDirectory().getPath()+"/archivo.txt";
+        try {
+			
+			FileWriter fw =  new FileWriter(s);
+			fw.append("hola");
+			fw.flush();
+			fw.close();
+		} catch (FileNotFoundException e) {
+			Log.v("mensaje",e.getMessage());
+			e.printStackTrace();
+		} catch (IOException e) {
+			Log.v("mensaje",e.getMessage());
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+    	 /*
+    	 String datax = "" ;
+         try {
+             FileInputStream fIn = openFileInput ( "archivo.txt" ) ;
+             InputStreamReader isr = new InputStreamReader ( fIn ) ;
+             BufferedReader buffreader = new BufferedReader ( isr ) ;
+
+             String readString = buffreader.readLine ( ) ;
+             while ( readString != null ) {
+                 datax = datax + readString ;
+                 readString = buffreader.readLine ( ) ;
+             }
+             
+             isr.close ( ) ;
+             
+         } catch ( IOException ioe ) {
+             ioe.printStackTrace ( ) ;
+         }
+         tv.setText("datos"+datax);
+         */
+     
+        tv.setText("ruta"+s);
+     
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}

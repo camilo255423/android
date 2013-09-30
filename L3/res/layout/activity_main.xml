@@ -1,0 +1,23 @@
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:gravity="center_horizontal">
+
+    <Button android:text="boton 1"
+        android:id="@+id/boton123"
+              style="@style/texto_estilos"
+              android:background="@drawable/anim_botones"
+              android:layout_width="match_parent"
+              android:onClick="metodo" 
+       		 android:layout_height="wrap_content">
+              </Button> 
+    <ListView android:entries="@array/valores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista"
+        >
+       		 
+        
+    </ListView>            
+             
+        
+
+</LinearLayout>
